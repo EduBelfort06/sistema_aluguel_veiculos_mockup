@@ -1,0 +1,85 @@
+:root {
+    --dark-gray: #454546;
+    --med-gray: #666666;
+    --light-gray: #8c8c8c;
+    --orange: #ff9800;
+    --light-orange: #ffc340;
+}
+
+body {
+    background-color: #f4f6f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark-gray);
+}
+
+/* Navbar Customizada */
+.navbar-custom {
+    background-color: var(--dark-gray);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.navbar-custom .navbar-brand {
+    color: var(--orange) !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.navbar-custom .nav-link {
+    color: #ffffff !important;
+    transition: 0.3s;
+}
+.navbar-custom .nav-link:hover, .navbar-custom .nav-link.active {
+    color: var(--light-orange) !important;
+}
+
+/* Botões */
+.btn-custom {
+    background-color: var(--orange);
+    color: #fff;
+    border: none;
+    transition: 0.3s;
+}
+.btn-custom:hover {
+    background-color: var(--light-orange);
+    color: var(--dark-gray);
+}
+
+/* Cards (Baseado na imagem de dashboard) */
+.card-dashboard {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    border-left: 5px solid var(--orange);
+    transition: transform 0.2s;
+}
+.card-dashboard:hover {
+    transform: translateY(-5px);
+}
+.card-title {
+    color: var(--med-gray);
+    font-size: 1.1rem;
+}
+.card-text-highlight {
+    color: var(--dark-gray);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Tabelas e Formulários */
+.table-custom thead {
+    background-color: var(--med-gray);
+    color: #fff;
+}
+.form-control:focus {
+    border-color: var(--orange);
+    box-shadow: 0 0 0 0.25rem rgba(255, 152, 0, 0.25);
+}
+
+/* Textos */
+.text-orange { color: var(--orange); }
+.text-light-gray { color: var(--light-gray); }
+
+/* Carrossel */
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}

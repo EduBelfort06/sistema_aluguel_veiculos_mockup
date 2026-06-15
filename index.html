@@ -1,12 +1,102 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DudsMobiRent - Sistema de Aluguel de Veículos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Sistema de Aluguel de Veículos</h1>
-    <p>Bem-vindo ao nosso sistema de aluguel de veículos!</p>
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">DudsMobiRent</a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Dashboard</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Clientes</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="clientes-cadastro.html">Cadastrar Cliente</a></li>
+                            <li><a class="dropdown-item" href="clientes-lista.html">Listar Clientes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Veículos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="veiculos-cadastro.html">Cadastrar Veículo</a></li>
+                            <li><a class="dropdown-item" href="veiculos-lista.html">Listar Veículos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        
+        <div id="ofertasCarousel" class="carousel slide mb-5 shadow-sm rounded" data-bs-ride="carousel">
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active" style="background-color: var(--dark-gray); height: 300px;">
+                    <div class="d-flex flex-column justify-content-center align-items-center h-100 text-white text-center p-4">
+                        <h2 class="text-orange">BEM-VINDO AO DUDSMOBIRENT</h2>
+                        <p>O sistema mais completo para gerenciar sua frota.</p>
+                        <a href="veiculos-lista.html" class="btn btn-custom mt-2">Ver Frota Disponível</a>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-color: var(--med-gray); height: 300px;">
+                    <div class="d-flex flex-column justify-content-center align-items-center h-100 text-white text-center p-4">
+                        <h2 class="text-light-orange">Oferta de Fim de Semana!</h2>
+                        <p>Descontos de até 20% no aluguel de SUVs.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#ofertasCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#ofertasCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <h4 class="mb-3" style="color: var(--med-gray);">Resumo do Sistema</h4>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card card-dashboard p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Total de Clientes</h5>
+                        <p class="card-text-highlight">1.204</p>
+                        <small class="text-light-gray">+15 cadastros esta semana</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card card-dashboard p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Veículos Disponíveis</h5>
+                        <p class="card-text-highlight">45</p>
+                        <small class="text-light-gray">De um total de 60 veículos</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card card-dashboard p-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Locações Ativas</h5>
+                        <p class="card-text-highlight">15</p>
+                        <small class="text-light-gray">Devoluções previstas para hoje: 3</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
