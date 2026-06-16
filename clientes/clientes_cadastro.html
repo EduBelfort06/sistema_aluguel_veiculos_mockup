@@ -13,30 +13,31 @@
                 <h4 class="mb-0">Novo Cliente</h4>
             </div>
             <div class="card-body p-4 bg-panel">
-                <form id="formCliente">
+                <form id="formCliente" novalidate>
+                    <div id="clientAlert" class="alert alert-success d-none" role="alert"></div>
                     <div class="row mb-3">
                         <div class="col-md-6">
-                            <label class="form-label">Nome Completo</label>
-                            <input type="text" class="form-control" required placeholder="Ex: João da Silva">
+                            <label class="form-label" for="clienteNome">Nome Completo</label>
+                            <input type="text" id="clienteNome" name="nome" class="form-control" required placeholder="Ex: João da Silva">
                         </div>
                         <div class="col-md-6">
-                            <label class="form-label">CPF</label>
-                            <input type="text" class="form-control" required placeholder="000.000.000-00">
+                            <label class="form-label" for="clienteCPF">CPF</label>
+                            <input type="text" id="clienteCPF" name="cpf" class="form-control" required placeholder="000.000.000-00">
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-md-6">
-                            <label class="form-label">E-mail</label>
-                            <input type="email" class="form-control" required placeholder="joao@email.com">
+                            <label class="form-label" for="clienteEmail">E-mail</label>
+                            <input type="email" id="clienteEmail" name="email" class="form-control" required placeholder="joao@email.com">
                         </div>
                         <div class="col-md-6">
-                            <label class="form-label">Telefone</label>
-                            <input type="text" class="form-control" required placeholder="(00) 00000-0000">
+                            <label class="form-label" for="clienteTelefone">Telefone</label>
+                            <input type="text" id="clienteTelefone" name="telefone" class="form-control" required placeholder="(00) 00000-0000">
                         </div>
                     </div>
                     <div class="mb-4">
-                        <label class="form-label">Endereço Completo</label>
-                        <input type="text" class="form-control" required placeholder="Rua, Número, Bairro, Cidade">
+                        <label class="form-label" for="clienteEndereco">Endereço Completo</label>
+                        <input type="text" id="clienteEndereco" name="endereco" class="form-control" required placeholder="Rua, Número, Bairro, Cidade">
                     </div>
                     <div class="d-flex justify-content-end">
                         <button type="reset" class="btn btn-secondary-custom me-2">Limpar</button>
@@ -48,6 +49,6 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

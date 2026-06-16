@@ -21,6 +21,13 @@
     --panel-border: rgba(255, 152, 0, 0.2);
 }
 
+[data-bs-theme="dark"] .card-dashboard .card-title,
+[data-bs-theme="dark"] .card-dashboard .card-text-highlight,
+[data-bs-theme="dark"] .card-dashboard,
+[data-bs-theme="dark"] .card-dashboard .card-body {
+    color: #ffffff;
+}
+
 body {
     background-color: var(--surface-soft);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
