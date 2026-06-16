@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar Veículo - DudsMobiRent</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container mt-5">
+        <div class="card shadow-sm border-0">
+            <div class="card-header" style="background-color: var(--med-gray); color: white;">
+                <h4 class="mb-0">Novo Veículo</h4>
+            </div>
+            <div class="card-body p-4">
+                <form id="formVeiculo">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">Marca</label>
+                            <input type="text" class="form-control" required placeholder="Ex: Chevrolet">
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label">Modelo</label>
+                            <input type="text" class="form-control" required placeholder="Ex: Onix 1.0 Turbo">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label class="form-label">Ano</label>
+                            <input type="number" class="form-control" required placeholder="2023">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Placa</label>
+                            <input type="text" class="form-control" required placeholder="ABC-1234">
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label">Valor da Diária (R$)</label>
+                            <input type="number" step="0.01" class="form-control" required placeholder="150.00">
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="reset" class="btn btn-secondary me-2">Limpar</button>
+                        <button type="submit" class="btn btn-custom">Salvar Veículo</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
