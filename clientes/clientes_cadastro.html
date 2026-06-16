@@ -7,6 +7,35 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">DudsMobiRent</a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Dashboard</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Clientes</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="clientes_cadastro.html">Cadastrar Cliente</a></li>
+                            <li><a class="dropdown-item" href="clientes_lista.html">Listar Clientes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Veículos</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../veiculos/veiculos_cadastro.html">Cadastrar Veículo</a></li>
+                            <li><a class="dropdown-item" href="../veiculos/veiculos_lista.html">Listar Veículos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <button id="themeToggleBtn" class="btn btn-outline-light btn-sm ms-lg-3 mt-3 mt-lg-0" type="button">Modo Escuro</button>
+            </div>
+        </div>
+    </nav>
+
     <main class="container mt-5">
         <div class="card shadow-sm border-0">
             <div class="card-header card-header-custom">

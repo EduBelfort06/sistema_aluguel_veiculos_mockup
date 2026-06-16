@@ -52,6 +52,14 @@ body {
 .navbar-custom .nav-link.active {
     color: var(--light-orange) !important;
 }
+.navbar-custom .dropdown-item {
+    color: var(--orange);
+    font-weight: 500;
+}
+.navbar-custom .dropdown-item:hover {
+    color: var(--light-orange);
+    background-color: rgba(255, 152, 0, 0.1);
+}
 
 .btn-custom {
     background-color: var(--orange);
