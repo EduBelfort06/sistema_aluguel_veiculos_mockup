@@ -21,18 +21,19 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Clientes</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="clientes-cadastro.html">Cadastrar Cliente</a></li>
-                            <li><a class="dropdown-item" href="clientes-lista.html">Listar Clientes</a></li>
+                            <li><a class="dropdown-item" href="clientes/clientes_cadastro.html">Cadastrar Cliente</a></li>
+                            <li><a class="dropdown-item" href="clientes/clientes_lista.html">Listar Clientes</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Veículos</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="veiculos-cadastro.html">Cadastrar Veículo</a></li>
-                            <li><a class="dropdown-item" href="veiculos-lista.html">Listar Veículos</a></li>
+                            <li><a class="dropdown-item" href="veiculos/veiculos_cadastro.html">Cadastrar Veículo</a></li>
+                            <li><a class="dropdown-item" href="veiculos/veiculos_lista.html">Listar Veículos</a></li>
                         </ul>
                     </li>
                 </ul>
+                <button id="themeToggleBtn" class="btn btn-outline-light btn-sm ms-lg-3 mt-3 mt-lg-0" type="button">Modo Escuro</button>
             </div>
         </div>
     </nav>
@@ -41,14 +42,14 @@
         
         <div id="ofertasCarousel" class="carousel slide mb-5 shadow-sm rounded" data-bs-ride="carousel">
             <div class="carousel-inner rounded">
-                <div class="carousel-item active" style="background-color: var(--dark-gray); height: 300px;">
+                <div class="carousel-item carousel-card carousel-card-dark active">
                     <div class="d-flex flex-column justify-content-center align-items-center h-100 text-white text-center p-4">
                         <h2 class="text-orange">BEM-VINDO AO DUDSMOBIRENT</h2>
                         <p>O sistema mais completo para gerenciar sua frota.</p>
-                        <a href="veiculos-lista.html" class="btn btn-custom mt-2">Ver Frota Disponível</a>
+                        <a href="veiculos/veiculos_lista.html" class="btn btn-custom mt-2">Ver Frota Disponível</a>
                     </div>
                 </div>
-                <div class="carousel-item" style="background-color: var(--med-gray); height: 300px;">
+                <div class="carousel-item carousel-card carousel-card-medium">
                     <div class="d-flex flex-column justify-content-center align-items-center h-100 text-white text-center p-4">
                         <h2 class="text-light-orange">Oferta de Fim de Semana!</h2>
                         <p>Descontos de até 20% no aluguel de SUVs.</p>
@@ -63,7 +64,7 @@
             </button>
         </div>
 
-        <h4 class="mb-3" style="color: var(--med-gray);">Resumo do Sistema</h4>
+        <h4 class="mb-3 text-light-gray">Resumo do Sistema</h4>
         <div class="row">
             <div class="col-md-4 mb-3">
                 <div class="card card-dashboard p-3">

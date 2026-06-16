@@ -4,82 +4,160 @@
     --light-gray: #8c8c8c;
     --orange: #ff9800;
     --light-orange: #ffc340;
+    --surface: rgba(255, 255, 255, 0.94);
+    --surface-soft: rgba(69, 69, 70, 0.06);
+    --shadow: rgba(69, 69, 70, 0.14);
+    --text-primary: var(--dark-gray);
+    --text-secondary: var(--light-gray);
+    --panel-border: rgba(69, 69, 70, 0.12);
+}
+
+[data-bs-theme="dark"] {
+    --surface: #4c4c52;
+    --surface-soft: #2f2f33;
+    --shadow: rgba(0, 0, 0, 0.35);
+    --text-primary: #f4f6f9;
+    --text-secondary: #d1d1d1;
+    --panel-border: rgba(255, 152, 0, 0.2);
 }
 
 body {
-    background-color: #f4f6f9;
+    background-color: var(--surface-soft);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--dark-gray);
+    color: var(--text-primary);
+    min-height: 100vh;
 }
 
-/* Navbar Customizada */
 .navbar-custom {
     background-color: var(--dark-gray);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 16px var(--shadow);
 }
 .navbar-custom .navbar-brand {
     color: var(--orange) !important;
-    font-weight: bold;
-    font-size: 1.5rem;
+    font-weight: 700;
+    font-size: 1.4rem;
 }
 .navbar-custom .nav-link {
-    color: #ffffff !important;
-    transition: 0.3s;
+    color: var(--surface) !important;
+    transition: color 0.2s ease;
 }
-.navbar-custom .nav-link:hover, .navbar-custom .nav-link.active {
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
     color: var(--light-orange) !important;
 }
 
-/* Botões */
 .btn-custom {
     background-color: var(--orange);
-    color: #fff;
+    color: var(--dark-gray);
     border: none;
-    transition: 0.3s;
+    transition: background-color 0.25s ease, color 0.25s ease;
 }
 .btn-custom:hover {
     background-color: var(--light-orange);
     color: var(--dark-gray);
 }
 
-/* Cards (Baseado na imagem de dashboard) */
+.btn-secondary-custom,
+.btn-outline-secondary {
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    border-color: var(--light-gray);
+}
+.btn-outline-secondary {
+    background-color: transparent;
+}
+.btn-secondary-custom:hover,
+.btn-outline-secondary:hover {
+    background-color: var(--med-gray);
+    color: var(--surface);
+    border-color: var(--med-gray);
+}
+
+.page-title {
+    color: var(--dark-gray);
+}
+
+.badge-status {
+    color: var(--dark-gray);
+    font-weight: 700;
+}
+.badge-available {
+    background-color: var(--light-orange);
+}
+.badge-rented {
+    background-color: var(--orange);
+}
+
 .card-dashboard {
+    background-color: var(--surface);
     border: none;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    border-radius: 14px;
+    box-shadow: 0 12px 32px var(--shadow);
     border-left: 5px solid var(--orange);
-    transition: transform 0.2s;
+    transition: transform 0.2s ease;
 }
 .card-dashboard:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
 }
-.card-title {
+.card-dashboard .card-title {
     color: var(--med-gray);
-    font-size: 1.1rem;
+    font-weight: 600;
 }
 .card-text-highlight {
     color: var(--dark-gray);
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: 700;
+}
+.card-header-custom {
+    background-color: var(--med-gray);
+    color: var(--surface);
+    border-bottom: none;
+}
+.card-body {
+    background-color: var(--surface);
 }
 
-/* Tabelas e Formulários */
 .table-custom thead {
     background-color: var(--med-gray);
-    color: #fff;
+    color: var(--surface);
 }
+.table-custom tbody tr:hover {
+    background-color: rgba(255, 152, 0, 0.08);
+}
+.table-custom td,
+.table-custom th {
+    vertical-align: middle;
+}
+
 .form-control:focus {
     border-color: var(--orange);
-    box-shadow: 0 0 0 0.25rem rgba(255, 152, 0, 0.25);
+    box-shadow: 0 0 0 0.25rem rgba(255, 152, 0, 0.18);
 }
 
-/* Textos */
-.text-orange { color: var(--orange); }
-.text-light-gray { color: var(--light-gray); }
+.text-orange { color: var(--orange) !important; }
+.text-light-orange { color: var(--light-orange) !important; }
+.text-light-gray { color: var(--light-gray) !important; }
 
-/* Carrossel */
-.carousel-item img {
+.carousel-card {
     height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+.carousel-card-dark {
+    background-color: var(--dark-gray);
+}
+.carousel-card-medium {
+    background-color: var(--med-gray);
+}
+
+.bg-panel {
+    background-color: var(--surface);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
 }
