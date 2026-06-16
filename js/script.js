@@ -326,4 +326,22 @@ document.addEventListener('DOMContentLoaded', function () {
     renderClientsTable();
     renderVehiclesTable();
     updateDashboardCards();
+
+    // Ensure first carousel item is active
+    const carouselElement = document.getElementById('ofertasCarousel');
+    if (carouselElement) {
+        const carouselItems = carouselElement.querySelectorAll('.carousel-item');
+        carouselItems.forEach((item, index) => {
+            if (index === 0) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+
+        const carousel = new bootstrap.Carousel(carouselElement, {
+            interval: 5000,
+            wrap: true
+        });
+    }
 });
