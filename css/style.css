@@ -4,7 +4,7 @@
     --light-gray: #8c8c8c;
     --orange: #ff9800;
     --light-orange: #ffc340;
-    --surface: rgba(255, 255, 255, 0.94);
+    --surface: rgba(255, 255, 255, 0.855);
     --surface-soft: rgba(69, 69, 70, 0.06);
     --shadow: rgba(69, 69, 70, 0.14);
     --text-primary: var(--dark-gray);
@@ -93,7 +93,7 @@ body {
 }
 
 .badge-status {
-    color: var(--dark-gray);
+    color: #000 !important;
     font-weight: 700;
 }
 .badge-available {
@@ -101,6 +101,14 @@ body {
 }
 .badge-rented {
     background-color: var(--orange);
+}
+
+[data-bs-theme="dark"] .badge-status {
+    color: #ffffff !important;
+}
+
+.table-custom .badge-status {
+    color: #000 !important;
 }
 
 .card-dashboard {
